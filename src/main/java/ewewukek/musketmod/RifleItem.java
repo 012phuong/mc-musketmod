@@ -9,27 +9,30 @@ import net.minecraft.entity.*;
 import net.minecraft.block.*;
 import net.minecraft.util.math.*;
 
-public class MusketItem extends Item
+public class RifleItem extends Item
 {
-    public static final int DURABILITY = 250;
+    public static final int DURABILITY = 275;
     public static final int LOADING_STAGE_1 = 5;
     public static final int LOADING_STAGE_2 = 10;
     public static final int LOADING_STAGE_3 = 20;
-    public static final int RELOAD_DURATION = 30;
+    public static final int LOADING_STAGE_4 = 20;
+    public static final int RELOAD_DURATION = 50;
     public static float bulletStdDev;
     public static double bulletSpeed;
     @ObjectHolder("musketmod:cartridge")
     public static Item CARTRIDGE;
-    @ObjectHolder("musketmod:musket_load0")
-    public static SoundEvent SOUND_MUSKET_LOAD_0;
-    @ObjectHolder("musketmod:musket_load1")
-    public static SoundEvent SOUND_MUSKET_LOAD_1;
-    @ObjectHolder("musketmod:musket_load2")
-    public static SoundEvent SOUND_MUSKET_LOAD_2;
-    @ObjectHolder("musketmod:musket_ready")
-    public static SoundEvent SOUND_MUSKET_READY;
-    @ObjectHolder("musketmod:musket_fire")
-    public static SoundEvent SOUND_MUSKET_FIRE;
+    @ObjectHolder("musketmod:rifle_load0")
+    public static SoundEvent SOUND_RIFLE_LOAD_0;
+    @ObjectHolder("musketmod:rifle_load1")
+    public static SoundEvent SOUND_RIFLE_LOAD_1;
+    @ObjectHolder("musketmod:rifle_load2")
+    public static SoundEvent SOUND_RIFLE_LOAD_2;
+    @ObjectHolder("musketmod:rifle_load3")
+    public static SoundEvent SOUND_RIFLE_LOAD_3;
+    @ObjectHolder("musketmod:rifle_ready")
+    public static SoundEvent SOUND_RIFLE_READY;
+    @ObjectHolder("musketmod:rifle_fire")
+    public static SoundEvent SOUND_RIFLE_FIRE;
     
     public MusketItem(final Item.Properties properties);
     
