@@ -31,9 +31,11 @@ public class MusketMod {
         public static void onItemsRegistry(final RegistryEvent.Register<Item> event) {
             event.getRegistry().registerAll(
                     new Item(new Item.Properties().group(ItemGroup.MISC)).setRegistryName(MODID, "barrel"),
+                    new Item(new Item.Properties().group(ItemGroup.MISC)).setRegistryName(MODID, "rifled_barrel"),
                     new Item(new Item.Properties().group(ItemGroup.MISC)).setRegistryName(MODID, "stock"),
                     new Item(new Item.Properties().group(ItemGroup.COMBAT)).setRegistryName(MODID, "cartridge"),
-                    new MusketItem(new Item.Properties().group(ItemGroup.COMBAT)).setRegistryName(MODID, "musket")
+                    new MusketItem(new Item.Properties().group(ItemGroup.COMBAT)).setRegistryName(MODID, "musket"),
+                    new MusketItem(new Item.Properties().group(ItemGroup.COMBAT)).setRegistryName(MODID, "rifle")
             );
         }
 
@@ -54,7 +56,13 @@ public class MusketMod {
                     new SoundEvent(new ResourceLocation(MODID, "musket_load1")).setRegistryName(MODID, "musket_load1"),
                     new SoundEvent(new ResourceLocation(MODID, "musket_load2")).setRegistryName(MODID, "musket_load2"),
                     new SoundEvent(new ResourceLocation(MODID, "musket_ready")).setRegistryName(MODID, "musket_ready"),
-                    new SoundEvent(new ResourceLocation(MODID, "musket_fire")).setRegistryName(MODID, "musket_fire")
+                    new SoundEvent(new ResourceLocation(MODID, "musket_fire")).setRegistryName(MODID, "musket_fire"),
+                    new SoundEvent(new ResourceLocation(MODID, "rifle_load0")).setRegistryName(MODID, "rifle_load0"),
+                    new SoundEvent(new ResourceLocation(MODID, "rifle_load1")).setRegistryName(MODID, "rifle_load1"),
+                    new SoundEvent(new ResourceLocation(MODID, "rifle_load2")).setRegistryName(MODID, "rifle_load2"),
+                    new SoundEvent(new ResourceLocation(MODID, "rifle_load3")).setRegistryName(MODID, "rifle_load3"),
+                    new SoundEvent(new ResourceLocation(MODID, "rifle_ready")).setRegistryName(MODID, "rifle_ready"),
+                    new SoundEvent(new ResourceLocation(MODID, "musket_fire")).setRegistryName(MODID, "rifle_fire")
             );
         }
 
